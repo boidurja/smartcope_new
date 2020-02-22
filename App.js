@@ -25,6 +25,8 @@ export default function App ( ) {
 		return (
 			<GalioProvider theme={{}}>
 				<StatusBar hidden />
+				<AppProviders>
+				</AppProviders>
 			</GalioProvider>
 		);
 	}
