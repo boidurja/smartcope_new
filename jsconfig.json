@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": false,
+		"baseUrl": "./",
+		"paths": {
+			"@providers": ["./providers"],
+			"@screens": ["./screens"],
+			"@containers": ["./containers"],
+			"@components": ["./components"],
+			"@theme": ["./theme"],
+			"@store": ["./store"],
+			"@hooks": ["./hooks"],
+			"@api": ["./api"],
+			"@providers/*": ["./providers/*"],
+			"@screens/*": ["./screens/*"],
+			"@containers/*": ["./containers/*"],
+			"@components/*": ["./components/*"],
+			"@theme/*": ["./theme/*"],
+			"@store/*": ["./store/*"],
+			"@hooks/*": ["./hooks/*"],
+			"@api/*": ["./api/*"],
+			"@utils": ["./utils"],
+			"@utils/*": ["./utils/*"],
+		}
+	}
+}
