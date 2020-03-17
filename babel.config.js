@@ -1,30 +1,22 @@
-module.exports = function (api) {
-
-	api.cache(true);
-
-	return {
-		presets: ['babel-preset-expo'],
-		plugins: [
-			[
-				'module-resolver',
-				{
-					alias: {
-						"@providers": "./providers",
-						"@screens": "./screens",
-						"@containers": "./containers",
-						"@components": "./components",
-						"@theme": "./theme",
-						"@store": "./store",
-						"@hooks": "./hooks",
-						"@api": "./api",
-						"@utils": "./utils",
-					}
-				}
-			],
-			[
-				'inline-dotenv'
-			]
-		]
-	};
-	
-};
+module.exports = {
+	presets: ["module:metro-react-native-babel-preset"],
+	env: {
+		production: {},
+	},
+	plugins: [
+		[
+			"@babel/plugin-proposal-decorators",
+			{
+				legacy: true,
+			},
+		],
+		[
+			'module-resolver',
+			{
+				"root": ["./app"],
+				"extensions": [".ts", ".tsx"]
+			}
+		],
+		["@babel/plugin-proposal-optional-catch-binding"],
+	],
+}
