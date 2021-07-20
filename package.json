@@ -41,7 +41,7 @@
     "mobx-state-tree": "^3.14.1",
     "ramda": "0.26.1",
     "react": "16.9.0",
-    "react-native": "0.61.2",
+    "react-native": "0.62.3",
     "react-native-camera": "^3.19.0",
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.6.0",
